@@ -199,6 +199,7 @@ public class ScripLearningScreen extends AbstractGameScreen {
     }
     private void keyPressed(float x) {
 
+
         key = (x - 3) / 34;
         System.out.println(key);
 //        System.out.println( actors.get(0).getNoteNumber());
