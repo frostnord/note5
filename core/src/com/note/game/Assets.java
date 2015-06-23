@@ -6,6 +6,7 @@ import com.badlogic.gdx.assets.AssetErrorListener;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
@@ -181,7 +182,7 @@ public class Assets implements AssetErrorListener, Disposable {
 //            this.heroStore = freeTypeFontGenerator.generateFont(freeTypeFontParameter);
 //            this.heroStore.getRegion().getTexture().setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
 //            this.heroStore.setScale(1.0f, 1.0f);
-//            freeTypeFontParameter.size = 30;
+            freeTypeFontParameter.size = 30;
 //            this.defaultBig = freeTypeFontGenerator.generateFont(freeTypeFontParameter);
 //            this.defaultBig.getRegion().getTexture().setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
 //            this.defaultBig.setScale(1.0f, -1.0f);
@@ -190,6 +191,8 @@ public class Assets implements AssetErrorListener, Disposable {
 //            this.levelComplete.setScale(1.0f, 1.0f);
 
             freeTypeFontParameter.size = 35;
+            freeTypeFontParameter.borderWidth= 2;
+            freeTypeFontParameter.borderColor = Color.BLACK;
             this.levelCompleted = freeTypeFontGenerator.generateFont(freeTypeFontParameter);
             this.levelCompleted.getRegion().getTexture().setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
 //            this.levelCompleted.setScale(1.0f, 1.0f);

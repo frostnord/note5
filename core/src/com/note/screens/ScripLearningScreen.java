@@ -188,6 +188,7 @@ public class ScripLearningScreen extends AbstractGameScreen {
 //        scoreWFont.setColor(1, 0, 0, 1);
 
         score.setColor(1, 0, 0, 1);
+
 //        }
         stage.getBatch().begin();
         score.draw(stage.getBatch(), " " + scoreWrong, x, y);

@@ -5,6 +5,7 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.Actor;
+import com.badlogic.gdx.utils.Align;
 import com.note.enums.GameState;
 import com.note.game.Assets;
 import com.note.screens.DirectedGame;
@@ -95,10 +96,10 @@ public class NoteGoriz extends Actor {
         }
         batch.draw(textureRegion, position.x, position.y, 50, 34);
 
-        this.font = Assets.instance.fonts.levelCompleted;
+        this.font = Assets.instance.fonts.levelComplete;
         font.setColor(0, 0, 0, 1);
         if (ran!=0) {
-            font.draw(batch, note, position.x + 25, position.y + 37,);
+            font.draw(batch, note, position.x + 25, position.y + 37,5,Align.center , true);
         }
 //        font.drawMultiLine(batch, Float.toString( index), position.x+50, position.y, 0, BitmapFont.HAlignment.CENTER);
 //        if (GameManager.ourInstance.getGameState()== GameState.WAITKEYPRESS) {
