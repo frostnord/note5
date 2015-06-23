@@ -183,7 +183,6 @@ public class Assets implements AssetErrorListener, Disposable {
 //            this.heroStore.getRegion().getTexture().setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
 //            this.heroStore.setScale(1.0f, 1.0f);
             freeTypeFontParameter.size = 30;
-
 //            this.defaultBig = freeTypeFontGenerator.generateFont(freeTypeFontParameter);
 //            this.defaultBig.getRegion().getTexture().setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
 //            this.defaultBig.setScale(1.0f, -1.0f);
